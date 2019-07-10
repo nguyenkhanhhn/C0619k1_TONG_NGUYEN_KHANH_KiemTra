@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<SCRIPT>
+    function listPrimes() {
+        let num = [10, 5, 2, 8, 7, 13];
+        let ketqua = [];
+        for (let i = 0; i < num.length; i++) {
+            let dem = 0;
+            for (j = 1; j <= num[i]; j++) {
+                if (num[i] % j == 0) {
+                    dem++;
+                }
+            }
+            if (dem == 2) {
+                ketqua.push(num[i]);
+            }
+        }
+        document.write(ketqua);
+
+    }
+</SCRIPT>
+</body>
+</html>
